@@ -133,6 +133,20 @@ table {
 html,
 body {
   height: 50%;
+  padding: 20px;
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
 }
 nav {
   display: flex;
@@ -145,4 +159,36 @@ nav a {
   color: black;
   width: 13%;
   text-decoration: none;
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+}
+.whoAmI {
+  background-color: lightgray;
+}
+.whoAmI img,
+.whoAmI h1,
+.whoAmI h4,
+.whoAmI p,
+.whoAmI button {
+  margin: 15px;
+}
+.whoAmI img {
+  height: 35%;
+  width: 35%;
+}
+.whoAmI p {
+  font-size: 1.5rem;
+}
+.whoAmI button {
+  color: white;
+  background-color: darkgray;
+  border: 1px solid darkgray;
+  border-radius: 0.6rem;
+}
+.whoAmI button:hover {
+  background-color: black;
+}
+.whoAmI button:focus {
+  color: black;
+  background-color: white;
 }
