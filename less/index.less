@@ -48,6 +48,14 @@ table {
 	border-spacing: 0;
 }
 
+.boldText(){
+	font-weight: bolder;
+}
+
+.darkBackground(){
+	background-color: lightgray;
+}
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
@@ -145,4 +153,43 @@ nav {
 		height: 3rem;
 		padding: 0.6rem;
 	}
+} //end moreAboutMe
+
+.workHistory {
+	margin-top: 2rem;
+
+	.historyTable {
+		display: flex;
+		padding-top: 0.5rem;
+		
+		.years {
+			width: 20%
+		}
+
+		.company, .position {
+			width: 40%;
+		}
+
+		li {
+			height: 3.5rem;
+			padding: 1rem;
+		}
+
+		.boldMe {
+			.boldText();
+		}
+
+		.darken{
+			border: 1px solid red;
+		}
+	}
+} //end work history
+
+footer {
+	color: white;
+	background-color: darkgray;
+	height: 5rem;
+	text-align: center;
+	line-height: 5rem;
+	margin-top: 1.5rem;
 }

@@ -215,3 +215,35 @@ nav a {
   height: 3rem;
   padding: 0.6rem;
 }
+.workHistory {
+  margin-top: 2rem;
+}
+.workHistory .historyTable {
+  display: flex;
+  padding-top: 0.5rem;
+}
+.workHistory .historyTable .years {
+  width: 20%;
+}
+.workHistory .historyTable .company,
+.workHistory .historyTable .position {
+  width: 40%;
+}
+.workHistory .historyTable li {
+  height: 3.5rem;
+  padding: 1rem;
+}
+.workHistory .historyTable .boldMe {
+  font-weight: bolder;
+}
+.workHistory .historyTable .darken {
+  border: 1px solid red;
+}
+footer {
+  color: white;
+  background-color: darkgray;
+  height: 5rem;
+  text-align: center;
+  line-height: 5rem;
+  margin-top: 1.5rem;
+}
