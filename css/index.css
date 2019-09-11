@@ -148,6 +148,10 @@ h3 {
 h4 {
   font-size: 2rem;
 }
+p,
+li {
+  font-size: 1.5rem;
+}
 nav {
   display: flex;
   justify-content: flex-end;
@@ -176,9 +180,6 @@ nav a {
   height: 35%;
   width: 35%;
 }
-.whoAmI p {
-  font-size: 1.5rem;
-}
 .whoAmI button {
   color: white;
   background-color: darkgray;
@@ -191,4 +192,26 @@ nav a {
 .whoAmI button:focus {
   color: black;
   background-color: white;
+}
+.moreAboutMe {
+  display: flex;
+  justify-content: space-between;
+}
+.moreAboutMe h2,
+.moreAboutMe h3,
+.moreAboutMe p,
+.moreAboutMe ul {
+  padding-top: 10px;
+}
+.moreAboutMe div {
+  width: 45%;
+}
+.moreAboutMe ul {
+  vertical-align: center;
+}
+.moreAboutMe li {
+  border: 1px solid lightgray;
+  border-radius: 0.6rem;
+  height: 3rem;
+  padding: 0.6rem;
 }
