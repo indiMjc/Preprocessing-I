@@ -219,25 +219,22 @@ nav a {
   margin-top: 2rem;
 }
 .workHistory .historyTable {
-  display: flex;
+  width: 100%;
   padding-top: 0.5rem;
-}
-.workHistory .historyTable .years {
-  width: 20%;
-}
-.workHistory .historyTable .company,
-.workHistory .historyTable .position {
-  width: 40%;
 }
 .workHistory .historyTable li {
   height: 3.5rem;
   padding: 1rem;
+  width: 33.3%;
+}
+.workHistory .historyTable ul {
+  display: flex;
 }
 .workHistory .historyTable .boldMe {
   font-weight: bolder;
 }
-.workHistory .historyTable .darken {
-  border: 1px solid red;
+.workHistory .historyTable .darkRow {
+  background-color: lightgray;
 }
 footer {
   color: white;

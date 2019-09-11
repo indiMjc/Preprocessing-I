@@ -157,30 +157,27 @@ nav {
 
 .workHistory {
 	margin-top: 2rem;
-
+	
 	.historyTable {
-		display: flex;
+		width: 100%;
 		padding-top: 0.5rem;
-		
-		.years {
-			width: 20%
-		}
-
-		.company, .position {
-			width: 40%;
-		}
 
 		li {
 			height: 3.5rem;
 			padding: 1rem;
+			width: 33.3%;
+		}
+
+		ul {
+			display: flex;
 		}
 
 		.boldMe {
 			.boldText();
 		}
 
-		.darken{
-			border: 1px solid red;
+		.darkRow {
+			.darkBackground();
 		}
 	}
 } //end work history
