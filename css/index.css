@@ -191,7 +191,12 @@ nav a {
   padding-bottom: 1rem;
 }
 .whoAmI {
-  background-color: lightgray;
+  background-image: url("../img/forest.jpg");
+}
+.whoAmI h1,
+.whoAmI h4,
+.whoAmI p {
+  color: #a8a808;
 }
 .whoAmI img,
 .whoAmI h1,
@@ -205,9 +210,9 @@ nav a {
   width: 35%;
 }
 .whoAmI button {
-  color: white;
-  background-color: darkgray;
-  border: 1px solid darkgray;
+  color: yellow;
+  background-color: black;
+  border: 1px solid black;
   border-radius: 0.6rem;
 }
 .whoAmI button:hover {
