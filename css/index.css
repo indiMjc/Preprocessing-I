@@ -126,6 +126,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Gayathri';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Gayathri Regular'), local('Gayathri-Regular'), url(https://fonts.gstatic.com/s/gayathri/v1/MCoQzAb429DbBilWLLA_-ps.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -135,6 +149,16 @@ body {
   height: 50%;
   padding: 20px;
   font-size: 62.5%;
+}
+body {
+  font-family: 'Gayathri', sans-serif;
+  font-weight: bolder;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Merriweather', serif;
 }
 h1 {
   font-size: 4rem;
