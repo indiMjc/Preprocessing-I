@@ -106,6 +106,10 @@ nav {
 	display: flex;
 	justify-content: flex-end;
 	width: 100%;
+
+	@media (max-width: 500px) {
+	}
+
 	a {
 		display: flex;
 		justify-content: flex-end;
@@ -114,14 +118,26 @@ nav {
 		text-decoration: none;
 		font-size: 1.8rem;
 		padding-bottom: 1rem;
+
+		@media (max-width: 500px) {
+			justify-content: space-evenly;
+			width: 25%;
+		}
+
 	  }
 } //end nav
 
 .whoAmI {
+	
 	background-image: url("../img/forest.jpg");
 
+	@media (max-width: 500px) {
+		display: flex;
+		flex-direction: column;
+	}
+
 	h1, h4, p {
-		color: rgb(168, 168, 8);
+		color: yellow;
 	}
 
 	img, h1, h4, p, button {
@@ -131,6 +147,10 @@ nav {
 	img {
 		height: 35%;
 		width: 35%;
+
+		@media (max-width: 500px) {
+			width: 37rem;
+		}
 	}
 
 	button {
@@ -148,6 +168,7 @@ nav {
 		color: black;
 		background-color: white;
 	}
+
 } //end whoAmI section
 
 .moreAboutMe {
@@ -173,6 +194,17 @@ nav {
 		padding: 0.6rem;
 		line-height: 2rem;
 	}
+
+	@media (max-width: 500px) {
+		flex-direction: column;
+
+			div {
+				text-align: center;
+				width: 100%;
+			}
+
+	} //end media query
+
 } //end moreAboutMe
 
 .workHistory {
@@ -181,6 +213,10 @@ nav {
 	.historyTable {
 		width: 100%;
 		padding-top: 0.5rem;
+
+		div {
+			height: 6rem;
+		}
 
 		li {
 			height: 3.5rem;
@@ -211,3 +247,4 @@ footer {
 	line-height: 5rem;
 	margin-top: 1.5rem;
 }
+

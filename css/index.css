@@ -190,13 +190,25 @@ nav a {
   font-size: 1.8rem;
   padding-bottom: 1rem;
 }
+@media (max-width: 500px) {
+  nav a {
+    justify-content: space-evenly;
+    width: 25%;
+  }
+}
 .whoAmI {
   background-image: url("../img/forest.jpg");
+}
+@media (max-width: 500px) {
+  .whoAmI {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .whoAmI h1,
 .whoAmI h4,
 .whoAmI p {
-  color: #a8a808;
+  color: yellow;
 }
 .whoAmI img,
 .whoAmI h1,
@@ -208,6 +220,11 @@ nav a {
 .whoAmI img {
   height: 35%;
   width: 35%;
+}
+@media (max-width: 500px) {
+  .whoAmI img {
+    width: 37rem;
+  }
 }
 .whoAmI button {
   color: yellow;
@@ -245,12 +262,24 @@ nav a {
   padding: 0.6rem;
   line-height: 2rem;
 }
+@media (max-width: 500px) {
+  .moreAboutMe {
+    flex-direction: column;
+  }
+  .moreAboutMe div {
+    text-align: center;
+    width: 100%;
+  }
+}
 .workHistory {
   margin-top: 2rem;
 }
 .workHistory .historyTable {
   width: 100%;
   padding-top: 0.5rem;
+}
+.workHistory .historyTable div {
+  height: 6rem;
 }
 .workHistory .historyTable li {
   height: 3.5rem;
