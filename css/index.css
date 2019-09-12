@@ -232,6 +232,12 @@ nav a {
   border: 1px solid black;
   border-radius: 0.6rem;
 }
+@media (max-width: 500px) {
+  .whoAmI button {
+    width: 30%;
+    margin: 5% 35%;
+  }
+}
 .whoAmI button:hover {
   background-color: black;
 }
