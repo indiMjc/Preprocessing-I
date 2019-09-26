@@ -1,1 +1,312 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Gayathri';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Gayathri Regular'), local('Gayathri-Regular'), url(https://fonts.gstatic.com/s/gayathri/v1/MCoQzAb429DbBilWLLA_-ps.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 50%;
+  padding: 20px;
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Gayathri', sans-serif;
+  font-weight: bolder;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Merriweather', serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+p,
+li {
+  font-size: 1.5rem;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+nav a {
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+  width: 13%;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  nav a {
+    justify-content: space-evenly;
+    width: 25%;
+  }
+}
+.whoAmI {
+  background-image: url("../img/forest.jpg");
+}
+@media (max-width: 500px) {
+  .whoAmI {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.whoAmI h1,
+.whoAmI h4,
+.whoAmI p {
+  color: yellow;
+}
+.whoAmI img,
+.whoAmI h1,
+.whoAmI h4,
+.whoAmI p,
+.whoAmI button {
+  margin: 15px;
+}
+.whoAmI img {
+  height: 35%;
+  width: 35%;
+}
+@media (max-width: 500px) {
+  .whoAmI img {
+    width: 37rem;
+  }
+}
+.whoAmI button {
+  color: yellow;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 0.6rem;
+}
+@media (max-width: 500px) {
+  .whoAmI button {
+    width: 30%;
+    margin: 5% 35%;
+  }
+}
+.whoAmI button:hover {
+  background-color: black;
+}
+.whoAmI button:focus {
+  color: black;
+  background-color: white;
+}
+.moreAboutMe {
+  display: flex;
+  justify-content: space-between;
+}
+.moreAboutMe h2,
+.moreAboutMe h3,
+.moreAboutMe p,
+.moreAboutMe ul {
+  padding-top: 10px;
+}
+.moreAboutMe div {
+  width: 45%;
+}
+.moreAboutMe ul {
+  vertical-align: center;
+}
+.moreAboutMe li {
+  border: 1px solid lightgray;
+  border-radius: 0.6rem;
+  height: 3rem;
+  padding: 0.6rem;
+  line-height: 2rem;
+}
+@media (max-width: 500px) {
+  .moreAboutMe {
+    flex-direction: column;
+  }
+  .moreAboutMe div {
+    text-align: center;
+    width: 100%;
+  }
+}
+.workHistory {
+  margin-top: 2rem;
+}
+.workHistory .historyTable {
+  width: 100%;
+  padding-top: 0.5rem;
+}
+.workHistory .historyTable div {
+  height: 6rem;
+}
+.workHistory .historyTable li {
+  height: 3.5rem;
+  padding: 1rem;
+  width: 33.3%;
+  line-height: 2rem;
+}
+.workHistory .historyTable ul {
+  display: flex;
+}
+.workHistory .historyTable .boldMe {
+  font-size: 2rem;
+}
+.workHistory .historyTable .darkRow {
+  background-color: lightgray;
+}
+footer {
+  color: white;
+  background-color: darkgray;
+  height: 5rem;
+  text-align: center;
+  line-height: 5rem;
+  margin-top: 1.5rem;
+}

@@ -48,12 +48,208 @@ table {
 	border-spacing: 0;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+@headerFont: 'Merriweather', serif;
+@bodyFont: 'Gayathri', sans-serif;
+
+.boldText(){
+	font-weight: bolder;
+}
+
+.darkBackground(){
+	background-color: lightgray;
+}
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 50%;
+	padding: 20px;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: @bodyFont;
+	font-weight: bolder;
+}
+
+h1, h2, h3, h4 {
+	font-family: @headerFont;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3.3rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+p, li {
+	font-size: 1.5rem;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+
+	@media (max-width: 500px) {
+	}
+
+	a {
+		display: flex;
+		justify-content: flex-end;
+		color: black;
+		width: 13%;
+		text-decoration: none;
+		font-size: 1.8rem;
+		padding-bottom: 1rem;
+
+		@media (max-width: 500px) {
+			justify-content: space-evenly;
+			width: 25%;
+		}
+
+	  }
+} //end nav
+
+.whoAmI {
+	
+	background-image: url("../img/forest.jpg");
+
+	@media (max-width: 500px) {
+		display: flex;
+		flex-direction: column;
+	}
+
+	h1, h4, p {
+		color: yellow;
+	}
+
+	img, h1, h4, p, button {
+		margin: 15px;
+	}
+
+	img {
+		height: 35%;
+		width: 35%;
+
+		@media (max-width: 500px) {
+			width: 37rem;
+		}
+	}
+
+	button {
+		color: yellow;
+		background-color: black;
+		border: 1px solid black;
+		border-radius: 0.6rem;
+
+		@media (max-width: 500px) {
+			width: 30%;
+			margin: 5% 35%;
+		}
+	}
+
+	button:hover {
+		background-color: black;
+	}
+
+	button:focus {
+		color: black;
+		background-color: white;
+	}
+
+} //end whoAmI section
+
+.moreAboutMe {
+	display: flex;
+	justify-content: space-between;
+
+	h2, h3, p, ul {
+		padding-top: 10px;
+	}
+
+	div {
+		width: 45%;
+	}
+
+	ul {
+		vertical-align: center;
+	}
+
+	li {
+		border: 1px solid lightgray;
+		border-radius: 0.6rem;
+		height: 3rem;
+		padding: 0.6rem;
+		line-height: 2rem;
+	}
+
+	@media (max-width: 500px) {
+		flex-direction: column;
+
+			div {
+				text-align: center;
+				width: 100%;
+			}
+
+	} //end media query
+
+} //end moreAboutMe
+
+.workHistory {
+	margin-top: 2rem;
+
+	.historyTable {
+		width: 100%;
+		padding-top: 0.5rem;
+
+		div {
+			height: 6rem;
+		}
+
+		li {
+			height: 3.5rem;
+			padding: 1rem;
+			width: 33.3%;
+			line-height: 2rem;
+		}
+
+		ul {
+			display: flex;
+		}
+
+		.boldMe {
+			font-size: 2rem;
+		}
+
+		.darkRow {
+			.darkBackground();
+		}
+	}
+} //end work history
+
+footer {
+	color: white;
+	background-color: darkgray;
+	height: 5rem;
+	text-align: center;
+	line-height: 5rem;
+	margin-top: 1.5rem;
 }
 
